@@ -22,11 +22,7 @@ if(open(my $f, '<', $DB)) {
 
 my $ua = new WWW::Mechanize(agent => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1 Safari/605.1.15');
 $ua->get("$SITE/login");
-$ua->submit_form(fields =>
-                 {
-                     username => $USER,
-                     password => $PASSWORD,
-                 });
+$ua->submit_form(fields => {username => $USER, password => $PASSWORD});
 my $r = $ua->get("/dashboard/findevents");
 my $root = HTML::TreeBuilder->new_from_content($r->decoded_content);
 foreach my $tr (($root->find_by_attribute('id', 'findevents')->find_by_tag_name('table'))[1]->find_by_tag_name('tr')) {
