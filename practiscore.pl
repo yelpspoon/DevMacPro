@@ -26,8 +26,6 @@ $ua->submit_form(fields =>
                  {
                      username => $USER,
                      password => $PASSWORD,
-                     previous => '',
-                     remember => 'remember',
                  });
 my $r = $ua->get("/dashboard/findevents");
 my $root = HTML::TreeBuilder->new_from_content($r->decoded_content);
