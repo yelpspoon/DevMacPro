@@ -17,6 +17,8 @@
       - cd fonts;./install.sh
       - # clean-up a bit
       - cd ..; rm -rf fonts
+    - brew tap homebrew/cask-fonts
+    - brew install --cask font-hack-nerd-font
   - sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
   - git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 #### Vi - Vundle
