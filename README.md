@@ -12,9 +12,7 @@
   - brew install zsh
   - powerline fonts
     - git clone https://github.com/powerline/fonts.git --depth=1
-      - # install
       - cd fonts;./install.sh
-      - # clean-up a bit
       - cd ..; rm -rf fonts
     - brew tap homebrew/cask-fonts
     - brew install --cask font-inconsolata-lgc-nerd-font
