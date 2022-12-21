@@ -1,8 +1,12 @@
 
 if [[ $(uname -m) == 'arm64' ]]; then
-    wget 'https://desktop.docker.com/mac/main/arm64/Docker.dmg?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-mac-arm64'
+    wget -N \
+      'https://desktop.docker.com/mac/main/arm64/Docker.dmg?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-mac-arm64' \
+      -O Docker.dmg
 else
-    wget 'https://desktop.docker.com/mac/main/amd64/Docker.dmg?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-mac-amd64'
+    wget -N \
+      'https://desktop.docker.com/mac/main/amd64/Docker.dmg?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-mac-amd64' \
+      -O Docker.dmg
 fi
 
 sudo hdiutil attach Docker.dmg
@@ -21,3 +25,6 @@ echo 'autoload -Uz compinit && compinit -i' >> ~/.zshrc
 
 #Then reload your shell:
 exec $SHELL -l
+
+# cleanup 
+rm Docker.dmg

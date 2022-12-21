@@ -73,6 +73,8 @@ ZSH_THEME="gnzh"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 plugins=(git
          zsh-autosuggestions
          zsh-syntax-highlighting
@@ -81,6 +83,10 @@ plugins=(git
          copypath
          jsontools
          macos
+	 docker-completion
+	 update-plugin
+	 you-should-use
+	 send
 	)
 
 source $ZSH/oh-my-zsh.sh
@@ -169,3 +175,5 @@ PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
 #
 # AWS
 alias show_rds_instances="aws --profile FPAC_Developer-260540542855 rds describe-db-instances --output json | jq '.DBInstances[]| [.DBInstanceIdentifier, .DBInstanceArn]'"
+fpath=(~/.zsh/completion $fpath)
+autoload -Uz compinit && compinit -i
