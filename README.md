@@ -33,3 +33,5 @@
 
   - Plugin 'hashivim/vim-terraform'
   - Plugin 'davidhalter/jedi-vim'
+  - Others
+    - https://www.linux.com/training-tutorials/vim-tips-using-tabs/
