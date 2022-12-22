@@ -35,3 +35,8 @@
   - Plugin 'davidhalter/jedi-vim'
   - Others
     - https://www.linux.com/training-tutorials/vim-tips-using-tabs/
+### Misc
+#### jq
+  - replace with gojq
+    - ln -s /opt/homebrew/bin/gojq /opt/homebrew/bin/jq  # M1 ?
+    - ln -s /usr/local/bin/gojq /usr/local/bin/jq        # Intel?
