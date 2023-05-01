@@ -17,10 +17,13 @@
     - brew tap homebrew/cask-fonts
     - brew install --cask font-inconsolata-lgc-nerd-font
   - sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-  - git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
-  - git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+  - git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+  - git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
   - Install zsh-update to update the other
   - https://github.com/AndrewHaluza/zsh-update-plugin
+  - git clone https://github.com/chr-fritz/docker-completion.zshplugin $ZSH_CUSTOM/plugins/docker-completion
+  - git clone https://github.com/MichaelAquilina/zsh-you-should-use.git $ZSH_CUSTOM/plugins/you-should-use
+  - git clone git@github.com:robertzk/send.zsh.git $ZSH_CUSTOM/plugins/send
 #### iTerm2
   - change font to InconsolataLGC Nerd Font
   - Profiles (pick a profile) > Text > Font InconsolataLGC Nerd Font
