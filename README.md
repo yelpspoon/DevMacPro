@@ -20,11 +20,13 @@
   - sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
   - git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
   - git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
-  - Install zsh-update to update the other
-  - https://github.com/AndrewHaluza/zsh-update-plugin
-  - git clone https://github.com/chr-fritz/docker-completion.zshplugin $ZSH_CUSTOM/plugins/docker-completion
+  - https://github.com/AndrewHaluza/zsh-update-plugin ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-update-plugin
+    - zsh-update to update the others.
+  - git clone https://github.com/chr-fritz/docker-completion.zshplugin $ZSH_CUSTOM/plugins/docker-completion (deprecated)
+  - https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/docker ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/docker
+  - https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/docker-compose ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/docker
   - git clone https://github.com/MichaelAquilina/zsh-you-should-use.git $ZSH_CUSTOM/plugins/you-should-use
-  - git clone git@github.com:robertzk/send.zsh.git $ZSH_CUSTOM/plugins/send
+  - git clone git@github.com:robertzk/send.zsh.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/send
 #### iTerm2
   - change font to InconsolataLGC Nerd Font
   - Profiles (pick a profile) > Text > Font InconsolataLGC Nerd Font
