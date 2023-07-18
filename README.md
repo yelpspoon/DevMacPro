@@ -8,6 +8,7 @@
       - view to uncomment/comment files out
     - brew bundle
 #### OhMyZsh
+  - https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins
   - https://project-awesome.org/unixorn/awesome-zsh-plugins#completions
   - brew install zsh
   - powerline fonts
