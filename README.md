@@ -23,7 +23,7 @@
   - git clone https://github.com/AndrewHaluza/zsh-update-plugin ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-update-plugin
     - zsh-update to update the others.
   - git clone https://github.com/chr-fritz/docker-completion.zshplugin $ZSH_CUSTOM/plugins/docker-completion (deprecated)
-  - git clone https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/docker ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/docker
+  - git clone [https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/docker](https://github.com/docker/cli/blob/master/contrib/completion/zsh/_docker) ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/docker
   - git clone https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/docker-compose ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/docker
   - git clone https://github.com/MichaelAquilina/zsh-you-should-use.git $ZSH_CUSTOM/plugins/you-should-use
   - git clone git@github.com:robertzk/send.zsh.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/send
